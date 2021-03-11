@@ -46,9 +46,14 @@
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>
-            설명충
-        </p>
+        <div class="about__description">   
+            <p>
+                관련학과를 다니면서 자료구조, 프로그래밍, 자바, 데이터통신, 시스템분석설계, 컴퓨터구조, UX/UI디자인 등 컴퓨터지식에 대한 기본적인것들을 배웠습니다.
+                그러나 졸업후에 코딩으로 무언가를 만드는 능력이 부족하다고 생각하여 학원에 등록하여 6개월간의 교육기간을 수료했습니다. 이 후에는 정보처리기사 자격증 취득 및 sql공부 등 배웠던것들을 
+                다시한번 익히는 시간을 가졌습니다. 꾸준하고, 끈기있고 새로운것에 대한 두려움이 없습니다. 또한 여러 회사에서의 아르바이트 경험을 바탕으로 회사의 구성원들과 잘 융화될 수 있습니다.
+                저를 뽑아주신다면 조화로운 팀원이 되겠습니다.
+            </p>
+        </div>
         <div class="about__majors">
             <div class="major">
             <div class="major__icon" >
@@ -79,26 +84,30 @@
             </div>
         </div>
         </div>
-        <div class="about__education">
-            <div class="edu">
-                <img src="imgs/edu-logo.png" alt="bitcamp" class="edu__logo">
-                <div class="edu__description">
-                 <p class="edu__name">비트캠프 수료</p>
-                 <p class="edu__period">2020.01~2020.07</p>
+            <div class="about__education">
+                <div class="edu">
+                    <img src="imgs/school.jpg" alt="bitcamp" class="edu__logo">
+                    <div class="edu__description">
+                        <p class="edu__name">서일대학교 인터넷정보과 전문학사 졸업</p>
+                        <p class="edu__period">2013.03~2019.02</p>
+                        <p class="edu__name">서일대학교 정보통신공학과 학사 졸업</p>
+                        <p class="edu__period">2019.03~2020.02</p>
+                    </div>
+                </div>
+                <div class="edu">
+                    <img src="imgs/edu-logo.png" alt="bitcamp" class="edu__logo">
+                    <div class="edu__description">
+                        <p class="edu__name">비트캠프 수료</p>
+                        <p class="edu__period">2020.01~2020.07</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="section__container">    
             <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
-        <p>
-        관련학과를 다니면서 전반적인 소프트웨어 개발, 설계, 프로그래밍 언어등을 배워 소프트웨어 공학에 대한 기본적인 지식을 갖고있습니다.
-        코딩능력이 부족하다고 판단되어 학원에 등록하여 6개월간의 교육기간을 수료했습니다. 새로운 것을 배우는것에 관심이 있고, 끈기가 있고 꾸준합니다.
-        여러 회사에서의 아르바이트 경험으로 회사의 구성원들과 잘 융화될 수 있습니다.
-        </p>
         <div class="skillset">
             <div class="skillset__left">
                 <h3 class="skillset__title">Skills</h3>
@@ -119,6 +128,13 @@
                     </div>
                     <div class="skill__description">
                         <span>Java</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value">
+                        </div>
+                    </div>
+                    <div class="skill__description">
+                        <span>JSP/Servlet</span>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__value">
@@ -181,7 +197,7 @@
     <section id="work" class="section">
         <div class="work__container">
             <h1>My work</h1>
-        <h3>Projects</h3>
+        <h3>Final Project</h3>
         <div class="work__projects">
             <a href="https://github.com/dst406/BIT-Final" 
             class="project"
@@ -201,15 +217,17 @@
     <section id="testimonials" class="section">
         <div class="section__container">
             <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
+            <h3>팀원들은 저를 이렇게 생각하더라구요 :)</h3>
             <div class="testimonials">
                 <div class="testimonial">
-                    <img src="imgs/testimonial/people1.jpg" alt="people1" class="testimonial__avata">
+                    <div class="testimonial__container">
+                        <img src="imgs/testimonial/woman.png" alt="people1" class="testimonial__avata">
+                        <h3>- 팀원 진보형 -</h3>
+                    </div>                    
                     <div class="testimonial__speech-bubble">
                         <p>
                             책임감이 뛰어나 맡은일에 최선을 다하는 사람입니다. 다른 팀원들에게 피해가 가지 않도록 노력하는 사람이에요. 
                             배려심이 뛰어나 같은 팀을 할때 굉장히 좋았습니다. 다음에 기회가 된다면 또 같이 프로젝트를 진행했으면 좋겠어요.
-                            <br>- 팀원 진보형 -
                         </p>
                      </div>
                 </div>
@@ -217,10 +235,14 @@
                         <div class="testimonial__speech-bubble">
                             <p>
                                 분위기를 유쾌하게 이끌어 갈줄 아는 사람입니다. 같이 팀이 이뤄 작업을 진행할때 항상 즐거웠어요. 같이 일하게 된다면
-                                분명 즐겁게 일할 수 있을 겁니다.<br> - 팀장 고재현 - 
+                                분명 즐겁게 일할 수 있을 겁니다. 문제해결 능력이 뛰어나요. 문제가 생기면 어떻게든 해결하려는 모습이 인상적이었습니다.
                             </p>
                         </div>
-                        <img src="imgs/testimonial/people1.jpg" alt="people1" class="testimonial__avata">
+                        <div class="testimonial__container">
+                            <img src="imgs/testimonial/man.png" alt="people2" class="testimonial__avata2">
+                            <h3> - 팀장 고재현 - </h3>    
+                        </div>
+                        
                     </div>
             </div>
         </div>
@@ -228,7 +250,6 @@
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
         <h2 class="contatct__email">dst406@naver.com</h2>
         <div class="contatct__links">
             <a href="https://github.com/dst406" target="_blank">
